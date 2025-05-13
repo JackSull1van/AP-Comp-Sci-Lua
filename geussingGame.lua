@@ -12,11 +12,11 @@ while not guessed and guessNum < 3 do
     else 
         guessNum = guessNum +1
         print("Incorrect")
-        print("You have", (3 - guessNum), "guess's remaining")
+        print("You have " ..tostring(3 - guessNum) .." guess's remaining")
     end
     
 end
 if not guessed then
     print("You lose :(")
-    print("The Number was", num)
+    print("The Number was "..tostring(num))
 end
