@@ -1,5 +1,5 @@
 
-local guessNum = 0
+local guessNum = 0;
 local num = math.random(1,10)
 local guessed = false
 local guess = nil
@@ -20,3 +20,4 @@ if not guessed then
     print("You lose :(")
     print("The Number was "..tostring(num))
 end
+

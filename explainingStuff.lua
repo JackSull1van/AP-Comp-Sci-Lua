@@ -16,10 +16,6 @@ function Class:skib(key)
 end
 
 function Class.__index(table, key)
-    --print("__index ran")
-    --print(key)
-    --print(table)
-    --print("asd"); print("asdasd")
     return Class[key]
 end
 -- local v = -10
@@ -29,7 +25,8 @@ end
     
 -- until v == 10
 local b = Class:new(2)
-local c = Class:new()
+local c = Class:new(17)
+print(c.skib(c))
 -- b:skib()
 -- Class.skib(b)
 --b.skib("324234")
